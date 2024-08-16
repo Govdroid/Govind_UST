@@ -1,8 +1,2 @@
-This is a login file
-This is the updated one
-New login
-resetting
-git diff meaning
-sum
 
 
