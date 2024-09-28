@@ -28,4 +28,16 @@ public class JobNotificationController {
     public JobNotificationModel getjobbyid(@PathVariable int JobId){
         return service.getjobbyid(JobId);
     }
+
+    @DeleteMapping("/jobs/{JobId}")
+    public String deleteJob(@PathVariable int JobId) {
+        service.deleteJob(JobId);
+        return "Job with ID " + JobId + " has been deleted";
+    }
+
+    @PutMapping("/jobs/{JobId}")
+    public JobNotificationModel updateJob(@PathVariable int JobId, @RequestBody JobNotificationModel updatedJob) {
+        return service.updateJob(JobId, updatedJob);
+    }
+
 }
