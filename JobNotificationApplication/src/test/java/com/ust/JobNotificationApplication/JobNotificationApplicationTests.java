@@ -1,10 +1,10 @@
-package com.ust.TrainerApplication;
+package com.ust.JobNotificationApplication;
 
 import org.junit.jupiter.api.Test;
 import org.springframework.boot.test.context.SpringBootTest;
 
 @SpringBootTest
-class TrainerApplicationTests {
+class JobNotificationApplicationTests {
 
 	@Test
 	void contextLoads() {
