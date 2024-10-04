@@ -15,8 +15,8 @@ public class LaptopService {
     private LaptopRepository repo;
 
 
-    public Laptop addnewlaptop(Laptop info) {
-        return repo.save(info);
+    public Laptop addnewlaptop(Laptop laptop) {
+        return repo.save(laptop);
     }
 
     public List<Laptop> getalllaptop() {

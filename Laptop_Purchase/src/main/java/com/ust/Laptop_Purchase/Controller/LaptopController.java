@@ -14,11 +14,11 @@ public class LaptopController {
     private LaptopService service;
 
     @PostMapping("/addlaptop")
-    public Laptop addLaptopinfo(@RequestBody Laptop info) {
-        return service.addnewlaptop(info);
+    public Laptop addLaptop(@RequestBody Laptop laptop) {
+        return service.addnewlaptop(laptop);
     }
     @GetMapping("/getlaptop")
-    public List<Laptop> getLaptopinfo(){
+    public List<Laptop> getLaptop(){
         return service.getalllaptop();
     }
 
